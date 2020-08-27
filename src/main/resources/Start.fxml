@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.AreaChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="320.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/11.0.0" xmlns:fx="http://javafx.com/fxml/1" fx:controller="StartController">
+   <children>
+      <AreaChart fx:id="tempAreaChart" layoutX="14.0" layoutY="14.0" prefHeight="250.0" prefWidth="380.0" title="Temperatur" AnchorPane.leftAnchor="16.0" AnchorPane.topAnchor="32.0">
+        <xAxis>
+          <NumberAxis side="BOTTOM"
+          label="Sekunder"/>
+        </xAxis>
+        <yAxis>
+          <NumberAxis side="LEFT"
+          label="Grader"/>
+        </yAxis>
+      </AreaChart>
+      <AreaChart fx:id="humidAreaChart" layoutX="400.0" layoutY="48.0" prefHeight="250.0" prefWidth="380.0" title="Luftfugtighed" AnchorPane.rightAnchor="16.0" AnchorPane.topAnchor="32.0">
+        <xAxis>
+          <NumberAxis side="BOTTOM"
+          label="Sekunder"/>
+        </xAxis>
+        <yAxis>
+          <NumberAxis side="LEFT"
+          label="Procent"/>
+        </yAxis>
+      </AreaChart>
+   </children>
+</AnchorPane>
